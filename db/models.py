@@ -27,6 +27,7 @@ class Request(Base):
 class BloodBank(Base):
     __tablename__="BloodBanks"
     bloodbank_id=Column(Integer,primary_key=True,index=True)
+    name=Column(String,nullable=False)
     address=Column(String,nullable=False)
     number=Column(String,nullable=True)
     
