@@ -25,7 +25,7 @@ class Request(Base):
     spd_req=Column(Boolean,nullable=False)
 
 class BloodBank(Base):
-    __tablename__="BloodBanks"
+    __tablename__="bloodbanks"
     bloodbank_id=Column(Integer,primary_key=True,index=True)
     name=Column(String,nullable=False)
     address=Column(String,nullable=False)
